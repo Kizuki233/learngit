@@ -3,10 +3,8 @@ using namespace std;
 
 int main(){
    cout<<"hello world"<<endl;
-   cout<<"hello world2"<<endl;
-   cout<<"hello world3"<<endl;
-   //test1
-   //test2
-   //wtf
+   //git remote add origin git@server-name:path/repo-name.git
+   //git remote add origin git@github.com:Kizuki233/learngit.git
+   //git push -u origin master
    return 0;
 }
