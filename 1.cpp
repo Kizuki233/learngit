@@ -10,6 +10,7 @@ int main(){
 
    //git remote -v 远程库
    //git push origin branch-name git pull
-
+   //git reset --hard HEAD^
+   //git reflog 版本信息
    return 0;
 }
