@@ -1,5 +1,16 @@
 #include <bits/stdc++.h>
+// #include <stdarg.h> 不定参数
 using namespace std;
+
+double sumtest(int n,...){
+  va_list ap;
+  double s=0;
+  va_start(ap,n);
+  for(int i=0;i<n;i++)
+  	s+=va_arg(ap,double);
+  va_end(ap);
+  return s;
+}
 
 vector<int> twoSum(vector<int> &numbers, int target)
 {
@@ -8,7 +19,6 @@ vector<int> twoSum(vector<int> &numbers, int target)
 	vector<int> result;
 	for (int i = 0; i < numbers.size(); i++) {
 		int numberToFind = target - numbers[i];
-
             //if numberToFind is found in map, return them
 		if (hash.find(numberToFind) != hash.end()) {
                     //+1 because indices are NOT zero based
@@ -16,12 +26,13 @@ vector<int> twoSum(vector<int> &numbers, int target)
 			result.push_back(i + 1);			
 			// return result;
 		}
-
             //number was not found. Put it in the map.
 		hash[numbers[i]] = i;
 	}
 	return result;
 }
+
+
 
 int main(){
    cout<<"hello world"<<endl;
@@ -45,6 +56,9 @@ int main(){
    vector<int> v(arr,arr+10);
    vector<int> ans=twoSum(v,10);
    cout<<ans.size()<<endl;
+
+   double s=sumtest(4,4.3,2.1,3.0,4.5);//第一个参数为参数个数
+   cout<<s<<endl;
    return 0;
 }
 
