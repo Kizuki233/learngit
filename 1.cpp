@@ -53,6 +53,9 @@ int main(){
    //git reset --hard HEAD^ 会退版本
    //git reflog 版本信息
    //git add-> commit -m
+
+   //git 用head指针指向当前的版本  master/dev也是用指针指向的形式
+   
    int a=1,b=2;
    a^=b;
    b^=a;
