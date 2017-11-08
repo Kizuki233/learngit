@@ -55,6 +55,7 @@ int main(){
    //git add-> commit -m
 
    //git 用head指针指向当前的版本  master/dev也是用指针指向的形式
+   //git checkout——检出-->创建分支和切换分支/检出分支
    
    int a=1,b=2;
    a^=b;
