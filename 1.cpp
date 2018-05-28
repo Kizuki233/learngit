@@ -45,6 +45,9 @@ int main(){
    //git remote add origin git@server-name:path/repo-name.git  远程库的声明
    //git remote add origin git@github.com:Kizuki233/learngit.git
    //git push -u origin master
+   //git pull
+   //git pull失败 要指定本地dev分支与远程origin/dev分支的链接
+   // git branch --set-upstream-to=origin/dev dev
    //git clone git@github.com:Kizuki233/Sort.git
    //git clone git@github.com:Kizuki233/learngit.git
 
